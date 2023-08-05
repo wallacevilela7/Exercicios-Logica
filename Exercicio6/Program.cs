@@ -4,3 +4,25 @@
  */
 
 using System;
+using System.Globalization;
+namespace Ex
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Digite o numero A:");
+            double A = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("Digite o numero B:");
+            double B = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("Digite o numero C:");
+            double C = double.Parse(Console.ReadLine());
+
+
+            double areaCirculo = Math.PI * Math.Pow(C, 2);
+            Console.WriteLine($"A area do círculo com raio c é: {areaCirculo.ToString("F2", CultureInfo.InvariantCulture)}");
+        }
+    }
+}
