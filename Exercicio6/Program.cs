@@ -39,6 +39,8 @@ namespace Ex
 
             double areaRetangulo = A * B;
             Console.WriteLine($"A area do Retângulo: {areaRetangulo.ToString("F2", CultureInfo.InvariantCulture)}");
+
+            
         }
     }
 }
