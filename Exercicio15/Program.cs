@@ -13,7 +13,7 @@ namespace Ex
         static void Main(string[] args)
         {
             Console.WriteLine("Digite a senha");
-            string password = Console.ReadLine();
+            string? password = Console.ReadLine();
 
             while (password != "2002")
             {
