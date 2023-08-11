@@ -12,18 +12,39 @@ namespace Ex
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Digite as Coordenadas do plano cartesiano (x,y)");
-            while(x != 0 || y != 0)
+
+            bool nullCoordinate = false;
+
+            while (nullCoordinate)
             {
+                Console.WriteLine("Digite as Coordenadas do plano cartesiano (x,y)");
                 Console.Write("X : ");
                 int x = int.Parse(Console.ReadLine());
                 Console.Write("Y : ");
                 int y = int.Parse(Console.ReadLine());
 
-                if (x > 0 & y > 0)
+                if (x == 0 || y == 0)
                 {
-                    Console.WriteLine("Primeiro quadrante");
+                    nullCoordinate = true;
                 }
+                else if(x > 0 && y > 0)
+                {
+                    Console.WriteLine("Primeiro Quadrante");
+                }
+                else if(x < 0 && y > 0)
+                {
+                    Console.WriteLine("Segundo Quadrante");
+                }
+                else if( x < 0 && y < 0)
+                {
+                    Console.WriteLine("Terceiro Quadrante");
+                }
+                else if (x > 0 && y < 0)
+                {
+                    Console.WriteLine("Quarto quadrante");
+                }
+                Console.ReadLine();
+                Console.Clear();
             }
         }
     }
