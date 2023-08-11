@@ -15,7 +15,7 @@ namespace Ex
 
             bool nullCoordinate = false;
 
-            while (nullCoordinate)
+            while (!nullCoordinate)
             {
                 Console.WriteLine("Digite as Coordenadas do plano cartesiano (x,y)");
                 Console.Write("X : ");
