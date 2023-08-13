@@ -12,7 +12,22 @@ namespace Ex
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Digite um valor inteiro: ");
+            int x = int.Parse(Console.ReadLine());
 
+            Console.WriteLine($"Digite os {x} desejados: ");
+            for (int i = 1; i <= x; i++)
+            {
+                int num = int.Parse(Console.ReadLine());
+                if(num >= 10 && num <= 20)
+                {
+                    Console.WriteLine($"{num} - in");
+                }
+                else
+                {
+                    Console.WriteLine($"{num} - out");
+                }
+            }
         }
     }
 }
