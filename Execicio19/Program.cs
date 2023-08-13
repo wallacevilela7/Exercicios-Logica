@@ -15,19 +15,28 @@ namespace Ex
             Console.WriteLine("Digite um valor inteiro: ");
             int x = int.Parse(Console.ReadLine());
 
+            int arrayLenght = x;
+            int[] array = new int[arrayLenght];
+
             Console.WriteLine($"Digite os {x} desejados: ");
-            for (int i = 1; i <= x; i++)
+            
+            for(int i = 0; i <= arrayLenght - 1; i++)
             {
-                int num = int.Parse(Console.ReadLine());
-                if(num >= 10 && num <= 20)
+                array[i] = int.Parse(Console.ReadLine());
+            }
+            
+            for(int i = 0; i <= array.Length - 1; i++)
+            {
+                if (array[i] >= 10 && array[i] <= 20)
                 {
-                    Console.WriteLine($"{num} - in");
+                    Console.WriteLine($"{array[i]} - in");
                 }
                 else
                 {
-                    Console.WriteLine($"{num} - out");
+                    Console.WriteLine($"{array[i]} - out");
                 }
             }
+            
         }
     }
 }
