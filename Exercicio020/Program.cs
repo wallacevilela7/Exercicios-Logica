@@ -20,6 +20,7 @@ namespace Ex
             for(int i = 0; i < n; i++)
             {
                 Console.WriteLine("Digite 3 valores reais:  ");
+
                 x1 = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
                 x2 = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
                 x3 = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
