@@ -4,7 +4,6 @@
  */
 
 using Exercicio027.Entities;
-using System;
 using System.Globalization;
 
 namespace Ex
