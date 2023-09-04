@@ -14,7 +14,7 @@ namespace Ex
 
             for(int i = 0; i < rented; i++)
             {
-                Console.WriteLine($"Alguel #{i+1}:");
+                Console.WriteLine($"Aluguel #{i+1}:");
                 Console.Write("Name: ");
                 string name = Console.ReadLine();
                 Console.Write("Email: ");
