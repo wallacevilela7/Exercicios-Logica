@@ -7,20 +7,30 @@ namespace Ex
     {
         static void Main(string[] args)
         {
+            Client[] clients = new Client[10];
+
             Console.Write("Quantos quartos serão alugados? ");
             int rented = int.Parse(Console.ReadLine());
 
-            Client[] clients = new Client[10];
-
             for(int i = 0; i < rented; i++)
             {
-                Console.WriteLine($"Rent #{i+1}:");
+                Console.WriteLine($"Alguel #{i+1}:");
                 Console.Write("Name: ");
                 string name = Console.ReadLine();
                 Console.Write("Email: ");
                 string email = Console.ReadLine();
                 Console.Write("Room: ");
                 int room = int.Parse(Console.ReadLine());
+
+                clients[room] = new Client(name, email);
+                Console.WriteLine();
+            }
+            for(int i = 0; i < clients.Length; i++)
+            {
+                if (clients[i] != null)
+                {
+                    Console.WriteLine($"{i} {clients[i]}");
+                }
             }
         }
     }
