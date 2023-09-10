@@ -13,8 +13,9 @@ namespace Ex
             {
                 x = int.Parse(Console.ReadLine());
                 y = int.Parse(Console.ReadLine());
-                Console.WriteLine(VerificaQuadrate(x,y));
-
+                string retorno = VerificaQuadrate(x, y);
+                if (retorno == "") break;
+                else Console.WriteLine(retorno);
             }
 
         }
@@ -22,7 +23,7 @@ namespace Ex
         {
             if (x == 0 || y == 0)
             {
-                return null;
+                return "";
             }
             else if (x > 0 && y > 0)
             {
