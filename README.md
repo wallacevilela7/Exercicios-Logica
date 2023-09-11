@@ -1,6 +1,6 @@
 # Repositório de Revisão do Curso de C#
 
-Bem-vindo ao repositório de revisão do curso de C#! Este repositório contém uma compilação de notas, exemplos de código e exercícios que ajudarão você a revisar e consolidar seus conhecimentos em C#. Aqui, você encontrará uma variedade de tópicos cobertos durante o curso.
+Bem-vindo ao repositório de revisão do curso de C#! Este repositório contém uma compilação de exemplos de código e exercícios que ajudarão você a revisar e consolidar seus conhecimentos em C#. Aqui, você encontrará uma variedade de tópicos cobertos durante o curso.
 
 ## Organização do Repositório
 
@@ -20,15 +20,6 @@ O repositório está organizado da seguinte forma:
     ├── estruturas_de_controle.md
     └── ...
 ```
-
-### `/exemplos`
-
-Esta pasta contém vários arquivos de exemplos de código em C#. Cada arquivo representa um conceito ou funcionalidade específica da linguagem. Os exemplos são acompanhados de comentários explicativos para facilitar a compreensão.
-
-### `/exercicios`
-
-Nesta pasta, você encontrará uma série de exercícios práticos relacionados aos tópicos abordados durante o curso. Os exercícios foram projetados para testar sua compreensão dos conceitos e aprofundar sua habilidade de programação em C#.
-
 ### `/notas`
 
 Aqui estão as notas de revisão organizadas por tópicos. Cada arquivo Markdown contém informações essenciais e resumos sobre um determinado tópico abordado no curso de C#.
@@ -56,6 +47,6 @@ Agradecemos a todos os contribuidores que ajudaram a tornar este repositório um
 
 ## Contato
 
-Se você tiver alguma dúvida, sugestão ou comentário, sinta-se à vontade para entrar em contato através das issues deste repositório ou por e-mail em [seu.email@example.com](mailto:wallace.vilela9@outlook.com).
+Se você tiver alguma dúvida, sugestão ou comentário, sinta-se à vontade para entrar em contato através das issues deste repositório ou por e-mail em wallace.vilela9@outlook.com.
 
 Divirta-se revisando o C# e aprimorando suas habilidades de programação! 🚀
