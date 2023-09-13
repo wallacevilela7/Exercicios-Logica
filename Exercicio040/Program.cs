@@ -27,6 +27,11 @@ namespace Ex
             {
                 Console.WriteLine("Impossível calcular");
             }
+            else
+            {
+                Console.WriteLine($"R1 {x1.ToString("F5", CultureInfo.InvariantCulture)}");
+                Console.WriteLine($"R1 {x2.ToString("F5", CultureInfo.InvariantCulture)}");
+            }
             //quando é impossível calcular as raizes????
         }
     }
