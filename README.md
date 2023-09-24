@@ -7,22 +7,11 @@ Bem-vindo ao repositório de revisão do curso de C#! Este repositório contém 
 O repositório está organizado da seguinte forma:
 
 ```
-├── exemplos/
-│   ├── exemplo1.cs
-│   ├── exemplo2.cs
-│   └── ...
 ├── exercicios/
 │   ├── exercicio1.cs
 │   ├── exercicio2.cs
-│   └── ...
-└── notas/
-    ├── introducao.md
-    ├── estruturas_de_controle.md
-    └── ...
+│   └── exercicio3.cs
 ```
-### `/notas`
-
-Aqui estão as notas de revisão organizadas por tópicos. Cada arquivo Markdown contém informações essenciais e resumos sobre um determinado tópico abordado no curso de C#.
 
 ## Como Contribuir
 
