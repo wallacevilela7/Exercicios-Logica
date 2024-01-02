@@ -6,7 +6,7 @@ namespace Ex
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("VAI SÃO PAULO!!!! CAMPEÃO DA COPA DO BRASIL");
+            Console.WriteLine("");
         }
     }
 }
