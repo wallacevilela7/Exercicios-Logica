@@ -1,0 +1,19 @@
+Exercício: Gerenciamento de Notas
+
+Você foi designado para criar um programa em C# que permite o gerenciamento de notas de alunos. O programa deve ser capaz de realizar as seguintes operações:
+
+Adicionar uma nova nota: O usuário deve poder inserir o nome do aluno e a nota correspondente. As notas podem variar de 0 a 10.
+
+Exibir todas as notas: O programa deve mostrar a lista completa de notas, apresentando o nome do aluno e a respectiva nota.
+
+Calcular a média das notas: O programa deve calcular e exibir a média das notas dos alunos.
+
+Encontrar a nota mais alta: O programa deve identificar e exibir a nota mais alta juntamente com o nome do aluno correspondente.
+
+Implemente o programa usando listas para armazenar as informações dos alunos e suas notas. Certifique-se de incluir uma estrutura de repetição para permitir que o usuário realize várias operações consecutivas até optar por sair do programa.
+
+Observações:
+
+Utilize uma lista para armazenar os nomes dos alunos e outra lista para armazenar as notas correspondentes, mantendo a correspondência entre elas pelas posições.
+Implemente funções separadas para cada uma das operações descritas acima.
+O programa deve exibir mensagens claras e solicitar entrada do usuário conforme necessário.
