@@ -99,6 +99,7 @@ class Program
         }
         else
         {
+            Console.WriteLine("Maria cursi");
             Console.WriteLine("\nNão há notas para encontrar a mais alta.");
         }
     }
