@@ -21,9 +21,8 @@ namespace Ex
             Console.Write("Quantidade em Estoque: ");
             int quantidadeEstoque = int.Parse(Console.ReadLine());
 
-            double valorEmEstoque = preco * quantidadeEstoque;
-
-            Produto p = new Produto(nome, preco, quantidadeEstoque, valorEmEstoque);
+            Produto p = new Produto(nome, preco, quantidadeEstoque);
+            p.CalcularValorTotalEstoque();
 
             Console.Clear();
             Console.WriteLine(p);
