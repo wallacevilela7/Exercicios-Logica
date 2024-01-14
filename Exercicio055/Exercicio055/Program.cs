@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Runtime.Intrinsics.X86;
 
 namespace Ex
 {
@@ -7,18 +8,36 @@ namespace Ex
         static void Main(string[] args)
         {
             int loopControl = 0;
-            int aux = 7;
+            double aux = 1;
 
-            for (int i = 1; i <= 9; i += 2)
+            for (double i = 0; i <= 2.0; i += 0.2)
             {
-                for (int j = aux; j <= 15; j--)
+                for (double j = aux; j <= 20; j++)
                 {
                     loopControl++;
-                    Console.WriteLine($"I={i} J={j}");
-                    if(loopControl == 3) { loopControl = 0; aux += 2; break; }
+                    if (IsAlmostEqual(i, 2.0))
+                    {
+                        Console.WriteLine($"I={i:F0} J={j:F0}");
+                    }
+                    else if (IsAlmostZero(i % 1))
+                    {
+                        Console.WriteLine($"I={i:F0} J={j:F0}");
+                    }
+                    else
+                    {
+                        Console.WriteLine($"I={i:F1} J={j:F1}");
+                    }
+                    if (loopControl == 3) { loopControl = 0; aux += 0.2; break; }
                 }
             }
-
+        }
+        static bool IsAlmostZero(double value, double tolerance = 1e-10)
+        {
+            return Math.Abs(value) < tolerance;
+        }
+        static bool IsAlmostEqual(double a, double b, double tolerance = 1e-10)
+        {
+            return Math.Abs(a - b) < tolerance;
         }
     }
 }
