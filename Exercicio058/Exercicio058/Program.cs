@@ -1,5 +1,4 @@
-﻿
-int numValidas = 0;
+﻿int numValidas = 0;
 double media = 0.0;
 bool validaNota1 = false;
 bool validaNota2 = false;
