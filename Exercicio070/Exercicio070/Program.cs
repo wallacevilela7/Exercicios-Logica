@@ -1,21 +1,12 @@
-﻿int num = int.Parse(Console.ReadLine());
-int fat = 1;
+﻿    int num = int.Parse(Console.ReadLine());
+    int fat = 1;
 
-if(num < 0 || num > 13)
-{
-    do
+    for(int i = 1; i <= num; i++)
     {
-        num = int.Parse(Console.ReadLine());
-    } while (num < 0 || num > 13);
-}
+        fat += fat * (num - i);
+    }
 
-
-for(int i = 1; i <= num; i++)
-{
-    fat += fat * (num - i);
-}
-
-Console.WriteLine(fat);
+    Console.WriteLine(fat);
 
 //fatorial de 5 
 
