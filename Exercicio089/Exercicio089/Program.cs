@@ -1,48 +1,40 @@
-﻿try
+﻿int line = 0;
+char op;
+const int size = 12;
+double[,] mat = new double[size,size];
+double[] vect = new double[size];
+double output = 0.0;
+
+line = int.Parse(Console.ReadLine());
+op = char.Parse(Console.ReadLine());
+
+for(int i = 0; i < size; i++)
 {
-
-
-int[,] mat = new int[12, 12];
-
-int linha = 0;
-linha = int.Parse(Console.ReadLine());
-string operacao = "";
-operacao = Console.ReadLine();
-int[] vet = new int[12];
-double saida = 0.0;
-
-for (int i = 0; i < 12; i++)
-{
-    for (int j = 0; j < 12; j++)
+    for(int j = 0; j < size; j++)
     {
-        mat[i, j] = int.Parse(Console.ReadLine());
+        mat[i,j] = double.Parse(Console.ReadLine());
     }
 }
 
-
-for (int i = linha; i < 12; i++)
+for(int i = line; i <= line; i++)
 {
-    for (int j = 0; j < 12; j++)
+    for(int  k = 0; k < size; k++)
     {
-        vet[j] = mat[i, j];
+        vect[k] = mat[i,k];
     }
 }
 
-for (int i = 0; i < 12; i++)
+for(int i = 0; i < size; i++)
 {
-    saida += vet[i];
+    output += vect[i];
 }
 
-if (operacao == "M" || operacao == "m")
+if(op == 'S')
 {
-    saida = saida / 12;
+    Console.WriteLine($"{output:F1}");
 }
-
-
-Console.WriteLine($"{saida:F1}");
-
-}
-catch(FormatException ex)
+else if(op == 'M')
 {
-    Console.WriteLine(ex.Message);
+    output /= size;
+    Console.WriteLine($"{output:F1}");
 }
