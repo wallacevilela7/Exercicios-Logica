@@ -14,10 +14,7 @@ for (int i = 0; i < size; i++)
     for (int j = 0; j < size; j++)
     {
         mat[i, j] = double.Parse(Console.ReadLine());
-        if ((j < i) && (i + j < 11))
-        {
-            list.Add(mat[i, j]);
-        }
+        if(i > j && i + j < 11 ) list.Add(mat[i, j]);
     }
 }
 
