@@ -1,4 +1,8 @@
-﻿int n = int.Parse(Console.ReadLine());
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+
+int n = int.Parse(Console.ReadLine());
 string[] input = new string[0];
 string player1, player2;
 
@@ -30,6 +34,6 @@ static string WhoWins(string p1, string p2)
     }
     else
     {
-        return "Raj Trapaceou!";
+        return "Raj trapaceou!";
     }
 }
