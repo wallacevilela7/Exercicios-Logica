@@ -8,12 +8,14 @@ input = Console.ReadLine().Split(' ');
 a = int.Parse(input[0]);
 b = int.Parse((input[1]));
 
-quociente = a / b;
-resto = (a % b + b) % b;
+resto = a % b;
 
-if ((a < 0 && b > 0) || (a > 0 && b < 0))
+if(resto < 0)
 {
-    quociente -= -1;
+    resto += Math.Abs(b);
 }
+
+quociente = (a - resto) / b;
+
 
 Console.WriteLine($"{quociente} {resto}");
