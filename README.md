@@ -24,14 +24,7 @@ Sinta-se à vontade para contribuir com este repositório! Se você encontrar al
 6. Faça push para a branch do seu repositório: `git push origin sua-branch`.
 7. Crie um pull request (solicitação de alteração) neste repositório original.
 
-## Observações
 
-- Certifique-se de atualizar a documentação e os comentários de código para tornar as explicações claras e concisas.
-- Evite enviar materiais protegidos por direitos autorais ou cópias diretas de recursos externos, a menos que você tenha a permissão adequada.
-
-## Agradecimentos
-
-Agradecemos a todos os contribuidores que ajudaram a tornar este repositório uma valiosa fonte de conhecimento da C# para iniciantes. Suas contribuições são muito apreciadas!
 
 ## Contato
 
