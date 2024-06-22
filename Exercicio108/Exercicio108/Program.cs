@@ -6,31 +6,32 @@ namespace Ex
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("");
-            int dia1, dia2, dia3;
-            string[] input = new string[0];
+            int[] a = LerInteiros(Console.ReadLine());
 
-            input = Console.ReadLine().Split(' ');
-            dia1 = int.Parse(input[0]);
-            dia2 = int.Parse(input[1]);
-            dia3 = int.Parse(input[2]);
+            int x = a[1] - a[0]; // Calcula a diferença entre o segundo e o primeiro elemento
+            int y = a[2] - a[1]; // Calcula a diferença entre o terceiro e o segundo elemento
 
-            string emoji = ChecaCondicao(dia1, dia2, dia3);
-            Console.WriteLine(emoji);
+            if (y > x || (x == y && x > 0))
+            {
+                Console.WriteLine(":)");
+            }
+            else
+            {
+                Console.WriteLine(":(");
+            }
         }
 
-        static string ChecaCondicao(int d1, int d2, int d3)
+        static int[] LerInteiros(string input)
         {
-            if (d2 > d1)
+            string[] valores = input.Split(' ');
+            int[] inteiros = new int[valores.Length];
+
+            for (int i = 0; i < valores.Length; i++)
             {
-                if ((d2 <= d3))
-                {
-                    return ":)";
-                }
+                inteiros[i] = int.Parse(valores[i]);
             }
 
-
-            return "";
+            return inteiros; 
         }
     }
 }

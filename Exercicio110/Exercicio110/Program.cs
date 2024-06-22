@@ -8,7 +8,8 @@ for (int i = 0; i < phrase.Length; i++)
 {
     phraseArray[i] = phrase[i];
 }
-int x = int.Parse(Console.ReadLine());
+if (!int.TryParse(Console.ReadLine(), out int x));
+
 
 for(int i = 0; i < x; i++)
 {
